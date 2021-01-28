@@ -1,0 +1,17 @@
+def o(s):
+    new=""
+    for i in range(0,len(s)):
+        if s[i]=="7":
+            continue
+        elif s[i]=="5" and s[i+1]=="6" or s[i]=="6" and s[i-1]=="5":
+            continue
+        else:
+            new=new + s[i]
+    
+    return new
+    
+    
+if __name__ == "__main__":
+    s="Ag56yt7kl"
+    ans=o(s)
+    print(ans)
